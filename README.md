@@ -207,7 +207,7 @@ certutil -hashfile aura-1.0-portable.zip SHA256
 |---|---|
 | windows 11 | tested |
 | windows 10 | not tested |
-| wiz color bulb, e27, rgb and tunable white, 8 w, wi-fi | tested |
+| wiz color bulb, e27 | tested |
 | other wiz color bulbs | not tested |
 | wiz tunable white and dimmable-only bulbs | not tested |
 | wiz plugs, strips and other devices | not tested |
