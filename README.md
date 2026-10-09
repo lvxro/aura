@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  a small windows app for people with wiz smart bulbs who want to switch and tune them<br>
+  a small windows app for people with wiz smart bulbs who want to switch and tune them
   from the keyboard, the tray or a window on the pc, without reaching for the phone.
 </p>
 
