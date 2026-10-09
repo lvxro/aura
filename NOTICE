@@ -1,0 +1,116 @@
+aura
+control your wiz lights from the pc, over the local network.
+
+Copyright (C) 2026 lvxro and the aura contributors
+
+this program is free software: you can redistribute it and/or modify it under
+the terms of the gnu general public license, version 3, as published by the
+free software foundation. it is distributed without any warranty. the full
+text is in the file LICENSE.
+
+
+1. where aura comes from
+------------------------
+
+aura is a modified version of:
+
+  kek's WiZ Light Controller 1.0
+  Copyright (C) 2026 Eshaan Pisal (@kek353)
+  https://github.com/kek353/philipswizlightcontroller
+  license: gnu gpl version 3
+
+that program is where these come from: local control over the wiz protocol,
+light discovery, lights saved by mac address, the color and white modes,
+presets, and syncing with the light's real state.
+
+how much of its code is left: aura was rewritten file by file. a line-by-line
+comparison of the two code bases finds 10 identical lines out of roughly
+2,800 in aura (the color temperature to rgb formula and a few one-liners).
+because aura started as a modification of that program and keeps its
+behavior, it is a derived work and stays under the same license, gpl-3.0.
+
+changes made in aura (october 2026):
+  - new interface written from scratch on qt (pyside6) instead of
+    customtkinter: monochrome, dot-matrix headlines, lowercase text.
+  - interface in english and spanish.
+  - power button with a brightness ring, sound feedback, tray icon, global
+    keyboard shortcuts and the --toggle / --on / --off commands.
+  - routines: sleep timer, wake-up light, white that follows the time of
+    day, and following the pc (lock and sleep).
+  - scenes made by the person, wiz built-in scenes, start with windows.
+  - music and screen effects.
+  - portable mode: settings are saved next to the program.
+  - discovery on every network adapter and automatic reconnection when the
+    light's ip address changes.
+
+
+2. ideas taken from wiz-hack
+----------------------------
+
+  wiz-hack, by Shravan Revanna (@myselfshravan)
+  https://github.com/myselfshravan/wiz-hack
+  license: mit, according to its readme
+
+the music and screen effects are inspired by it: frequency bands mapped to
+rgb, pulse, strobe, and ambilight-style edge analysis. the ideas were
+reimplemented for aura; its code was not copied (the same comparison finds 2
+identical lines, both generic).
+
+
+3. the wiz protocol
+-------------------
+
+the local wiz protocol (json over udp, port 38899) is documented by the
+community in pywizlight: https://github.com/sbidy/pywizlight
+
+
+4. files in this repository that are not aura's own work
+--------------------------------------------------------
+
+on/off sounds, app/aura/sounds/*.wav
+  real recordings of mechanical keyboard switches, cut, trimmed and
+  levelled by tools/make_sounds.py. nothing is synthesized.
+  from mechvibes, https://github.com/hainguyents13/mechvibes
+    MIT License, Copyright (c) 2021 Hai Nguyen
+  from kbsim, https://github.com/tplai/kbsim
+    MIT License, Copyright (c) Thomas Lai
+  which file comes from where, and the license text: app/aura/sounds/LICENSES.txt
+
+fonts, app/aura/fonts/*.ttf and docs/fonts/*.ttf
+  doto, Copyright 2024 The Doto Project Authors
+    https://github.com/oliverlalan/Doto
+  jetbrains mono, Copyright 2020 The JetBrains Mono Project Authors
+    https://github.com/JetBrains/JetBrainsMono
+  both under the sil open font license 1.1 (the OFL-*.txt files next to them).
+  the files in app/aura/fonts are static cuts made by tools/make_fonts.py; in
+  the doto cut, the period and the colon were reduced to single dots.
+
+
+5. what the portable build adds (not in this repository)
+--------------------------------------------------------
+
+tools/fetch_deps.py downloads these and tools/build_portable.py bundles them,
+unmodified, into the release zip:
+
+  cpython 3.12 (python-build-standalone)   python software foundation license
+  qt 6 and pyside6                         lgpl-3.0
+  shiboken6                                lgpl-3.0
+  mss                                      mit
+  pyaudiowpatch / portaudio                mit
+
+each package's license travels inside the zip, in runtime\LICENSE.txt and in
+the *.dist-info folders of runtime\Lib\site-packages. qt and pyside6 are used
+as unmodified dynamic libraries and can be replaced with compatible versions.
+
+
+6. names
+--------
+
+"wiz" is a trademark of signify. "nothing" is a trademark of nothing
+technology limited. switch and keyboard names belong to their owners and are
+used only to say what was recorded.
+
+aura is an independent project. it is not affiliated with, sponsored by or
+endorsed by wiz, signify or nothing. the look of this project is inspired by
+dot-matrix industrial design in general; it uses no logo, typeface or material
+from nothing.

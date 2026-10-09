@@ -1,0 +1,67 @@
+SOUNDS IN THIS FOLDER / SONIDOS DE ESTA CARPETA
+===============================================
+
+ENGLISH
+-------
+Every file here is a real recording of a mechanical keyboard switch,
+taken from two open-source projects and adapted for Aura: one keystroke
+was cut out (a letter key for "on", the space bar for "off"), trimmed,
+and brought to the same volume as the others. Nothing was synthesized.
+
+From Mechvibes (https://github.com/hainguyents13/mechvibes), MIT License,
+Copyright (c) 2021 Hai Nguyen:
+  cream_*.wav     NK Cream (sound pack "NK Cream (original by Ryan)")
+  oreo_*.wav      Everglide Oreo
+  crystal_*.wav   Everglide Crystal Purple
+  topre_*.wav     Topre (purple, hybrid, PBT keycaps)
+  mxblack_*.wav   Cherry MX Black (PBT keycaps)
+  mxred_*.wav     Cherry MX Red (PBT keycaps)
+  mxbrown_*.wav   Cherry MX Brown (PBT keycaps)
+  mxblue_*.wav    Cherry MX Blue (PBT keycaps)
+
+From kbsim (https://github.com/tplai/kbsim), MIT License,
+Copyright (c) Thomas Lai:
+  holypanda_*.wav Holy Panda
+  blackink_*.wav  Gateron Black Ink
+  buckling_*.wav  Buckling spring
+  alps_*.wav      SKCM Blue Alps
+  boxnavy_*.wav   Kailh Box Navy
+
+Switch and keyboard names belong to their owners and are used only to
+say what was recorded. Aura is not affiliated with any of them.
+
+ESPAÑOL
+-------
+Cada archivo de esta carpeta es una grabación real de un switch de
+teclado mecánico, tomada de dos proyectos de código abierto y adaptada
+para Aura: se recortó una pulsación (una letra para "on", la barra
+espaciadora para "off"), se ajustó el inicio y se igualó el volumen con
+el resto. No hay nada sintetizado.
+
+La lista de archivos y su origen es la de arriba. Los nombres de los
+switches y teclados pertenecen a sus dueños y se usan solo para decir
+qué se grabó. Aura no está afiliada a ninguno de ellos.
+
+
+MIT License (applies to both projects / vale para los dos proyectos)
+--------------------------------------------------------------------
+Mechvibes: Copyright (c) 2021 Hai Nguyen
+kbsim:     Copyright (c) Thomas Lai
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

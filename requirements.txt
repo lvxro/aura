@@ -1,0 +1,5 @@
+# what aura needs to run from source:  python app/main.py
+PySide6-Essentials==6.12.0
+mss==10.2.0
+# music effect: captures what the pc is playing (wasapi loopback). windows only.
+PyAudioWPatch==0.2.12.9; sys_platform == "win32"

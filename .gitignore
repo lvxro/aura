@@ -1,0 +1,25 @@
+# what aura writes while it runs from source: settings, saved lights, error log
+/data/
+
+# downloads and intermediate files of the portable build (tools/fetch_deps.py, tools/build_launcher.py)
+/build/
+
+# the portable folder and its zip (tools/build_portable.py); they are published as releases, not committed
+/dist/
+*.zip
+
+# raw screenshots, before they are mounted for the readme (tools/shots.py)
+/docs/shots/
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# editors and systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

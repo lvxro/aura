@@ -1,0 +1,8 @@
+# tests, screenshots and the portable build
+-r requirements.txt
+PySide6==6.12.0        # the full package: the tests and tools/shots.py use QtTest
+pefile                 # tools/build_portable.py checks the imports of every bundled binary
+ziglang                # tools/build_launcher.py cross-compiles Aura.exe
+pillow                 # tools/make_icon.py and tools/readme_assets.py
+fonttools              # tools/make_fonts.py and tools/readme_assets.py
+numpy                  # tools/make_sounds.py only

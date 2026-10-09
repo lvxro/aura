@@ -1,0 +1,126 @@
+AURA 1.0 - credits and licenses
+===============================
+
+English first. El texto en español está más abajo.
+
+Aura is a modified version of:
+
+  kek's WiZ Light Controller 1.0
+  Copyright (C) 2026 Eshaan Pisal (@kek353)
+  https://github.com/kek353/philipswizlightcontroller
+  License: GNU GPL version 3
+
+That program is the source of the local control protocol, light
+discovery, lights saved by MAC address, the RGB and white modes, presets
+and syncing with the light's real state.
+
+Changes in this version (October 2026):
+  - New interface, written from scratch on Qt (PySide6) instead of
+    CustomTkinter, in a monochrome design.
+  - Interface in English and Spanish.
+  - Main power button with sound feedback, tray icon, global keyboard
+    shortcuts and the --toggle / --on / --off commands.
+  - Routines: sleep timer, wake-up light, white that follows the time of
+    day, and following the PC (lock and sleep).
+  - Scenes made by the person, and an option to start with Windows.
+  - Portable mode: settings are saved next to the program.
+  - WiZ built-in scenes.
+  - Music and screen effects.
+  - Discovery on every network adapter and automatic reconnection when
+    the light's IP address changes.
+
+Aura is distributed under the same license, GNU GPL version 3
+(LICENSE.txt), WITHOUT ANY WARRANTY. The complete source code is in the
+"app" folder.
+
+The music and screen effects are inspired by:
+
+  wiz-hack, by Shravan Revanna (@myselfshravan)
+  https://github.com/myselfshravan/wiz-hack
+  MIT license, according to its README.
+
+The ideas (frequency bands to RGB, pulse, strobe, Ambilight-style edge
+analysis) were rewritten for this app; its code was not copied.
+
+The local WiZ protocol is documented by the community in pywizlight
+(https://github.com/sbidy/pywizlight).
+
+
+Bundled components
+------------------
+Python 3.12 (python-build-standalone)      PSF License       runtime\LICENSE.txt
+Qt 6 and PySide6                           LGPL-3.0          https://www.qt.io/licensing
+mss                                        MIT
+On/off sounds (keyboard recordings from    MIT               app\aura\sounds\LICENSES.txt
+  Mechvibes, by Hai Nguyen, and kbsim,
+  by Thomas Lai)
+PyAudioWPatch / PortAudio                  MIT
+Doto typeface (dot-matrix)                 SIL OFL 1.1       app\aura\fonts\OFL-Doto.txt
+JetBrains Mono typeface                    SIL OFL 1.1       app\aura\fonts\OFL-JetBrainsMono.txt
+
+Each package's license is in the *.dist-info folders inside
+runtime\Lib\site-packages. Qt and PySide6 are used as unmodified dynamic
+libraries: you can replace their files in
+runtime\Lib\site-packages\PySide6 with another compatible version.
+
+"WiZ" is a trademark of Signify. Aura is an independent project and is not
+affiliated with, sponsored by or endorsed by WiZ or Signify.
+
+
+
+=========================================================================
+ESPAÑOL
+=========================================================================
+
+AURA 1.0 - créditos y licencias
+===============================
+
+Aura es una versión modificada de:
+
+  kek's WiZ Light Controller 1.0
+  Copyright (C) 2026 Eshaan Pisal (@kek353)
+  https://github.com/kek353/philipswizlightcontroller
+  Licencia: GNU GPL versión 3
+
+De ese programa vienen el protocolo de control local, el descubrimiento de
+luces, las luces guardadas por dirección MAC, los modos RGB y blanco, los
+presets y la sincronización con el estado real de la luz.
+
+Cambios de esta versión (octubre de 2026):
+  - Interfaz nueva, escrita de cero sobre Qt (PySide6) en lugar de
+    CustomTkinter, con diseño monocromo.
+  - Interfaz en inglés y español.
+  - Botón de encendido principal con sonido, ícono en la bandeja, atajos
+    de teclado globales y órdenes --toggle / --on / --off.
+  - Rutinas: temporizador para dormir, amanecer, blanco que sigue la hora
+    del día y seguimiento de la PC (bloqueo y suspensión).
+  - Escenas hechas por la persona y opción de iniciar con Windows.
+  - Modo portable: la configuración se guarda junto al programa.
+  - Escenas de fábrica de WiZ.
+  - Efectos de música y de pantalla.
+  - Búsqueda en todos los adaptadores de red y reconexión automática cuando
+    cambia la dirección IP de la luz.
+
+Aura se distribuye bajo la misma licencia, GNU GPL versión 3 (LICENSE.txt),
+SIN NINGUNA GARANTÍA. El código fuente completo está en la carpeta "app".
+
+Los efectos de música y de pantalla están inspirados en:
+
+  wiz-hack, de Shravan Revanna (@myselfshravan)
+  https://github.com/myselfshravan/wiz-hack
+  Licencia MIT, según su README.
+
+Las ideas (bandas de frecuencia a RGB, pulso, estrobo, análisis de bordes
+estilo Ambilight) se reescribieron para esta app; no se copió su código.
+
+El protocolo local de WiZ está documentado por la comunidad en pywizlight
+(https://github.com/sbidy/pywizlight).
+
+Los sonidos de prender y apagar son grabaciones reales de teclados
+mecánicos tomadas de Mechvibes (Hai Nguyen) y kbsim (Thomas Lai), ambos con
+licencia MIT. El detalle está en app\aura\sounds\LICENSES.txt.
+
+Las licencias de cada componente incluido figuran en la tabla de arriba.
+
+"WiZ" es una marca de Signify. Aura es un proyecto independiente y no está
+afiliado, patrocinado ni respaldado por WiZ o Signify.
